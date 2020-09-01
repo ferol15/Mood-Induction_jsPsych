@@ -153,8 +153,11 @@ Qualtrics.SurveyEngine.addOnload(function () {
 
         // experimental session-defining variables
         if (flag_debug) {
+            
+            // WARNING: WHEN DEPLOYING THIS, BE SURE TO CHANGE flag_debug to false
+            
             // if true: make the button appear faster
-            time_unit = 10;
+            time_unit = 100; // ms instead of 1000 ms
             console.log('Entered mood: ', mood);
         }
 
