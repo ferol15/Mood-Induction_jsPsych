@@ -168,7 +168,7 @@ Qualtrics.SurveyEngine.addOnload(function () {
         // also playing sound only works after an interaction with user, like button press
         timeline.push({
             type: 'fullscreen',
-            message: '<p>Music will start to play when you press the button below.</p><p>',
+            message: '<p>Music will start to play when you press the button below.</p><br>',
             fullscreen_mode: true
         });
 

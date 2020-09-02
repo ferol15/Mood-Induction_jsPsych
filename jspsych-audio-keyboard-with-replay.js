@@ -1,6 +1,6 @@
 /**
  * jspsych-audio-keyboard-with-replay
- * Kyoung whan Choe (https://github.com/kywch/)
+ * Kyoung Whan Choe (https://github.com/kywch/)
  *
  * plugin for playing an audio file and getting a keyboard response
  * with replay key -- to make sure that Ps can listen to the sound
