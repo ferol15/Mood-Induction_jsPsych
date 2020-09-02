@@ -4,7 +4,7 @@ Qualtrics.SurveyEngine.addOnload(function () {
 
     /* PLEASE CHECK:
         TO RUN THIS SCRIPT PROPERLY, THE EMBEDDED VARIABLES 
-            *** mood, mood_spent_time, script_order ***
+            *** mood, mood_script_order, mood_spent_time ***
         MUST BE DEFINED.
     /*
 
@@ -188,11 +188,11 @@ Qualtrics.SurveyEngine.addOnload(function () {
                 /* Change 6: Adding the clean up and continue functions.*/
                 
                 // save the induction-related data to Qualtrics
-                Qualtrics.SurveyEngine.setEmbeddedData("script_order", script_order);
+                Qualtrics.SurveyEngine.setEmbeddedData("mood_script_order", script_order);
                 Qualtrics.SurveyEngine.setEmbeddedData("mood_spent_time", mood_spent_time);
                 if (flag_debug) {
-                    console.log('Script order: ', script_order);
-                    console.log('Mood_spent_time: ', mood_spent_time);
+                    console.log('Mood script order: ', script_order);
+                    console.log('Mood spent time: ', mood_spent_time);
                 }
             
                 // clear the stage
