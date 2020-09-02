@@ -64,6 +64,16 @@
 </body>
 
 <script>
+
+    /* get the mood from url */
+    const urlParams = new URLSearchParams(window.location.search);
+    var mood = urlParams.get('mood');
+    console.log('Entered mood: ', mood);
+
+    if (mood === null) {
+        mood = 'happy';
+    }
+
     /* create timeline */
     var timeline = [];
     var mood_spent_time = '';
@@ -174,7 +184,7 @@
             }
         }
     }
-    timeline.push(generate_mood_induction('fear'));
+    timeline.push(generate_mood_induction(mood));
 
     timeline.push({
         type: 'fullscreen',
