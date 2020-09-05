@@ -129,8 +129,8 @@ Qualtrics.SurveyEngine.addOnload(function () {
                 Qualtrics.SurveyEngine.setEmbeddedData("audio_test_order", audio_test_order.toString().replace(/,/g, ';'));
             
                 // clear the stage
-                jQuery('display_stage').remove();
-                jQuery('display_stage_background').remove();
+                jQuery('#display_stage').remove();
+                jQuery('#display_stage_background').remove();
 
                 // simulate click on Qualtrics "next" button, making use of the Qualtrics JS API
                 qthis.clickNextButton();
